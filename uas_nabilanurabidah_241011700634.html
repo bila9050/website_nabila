@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>BI Shop</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="bi.png" alt="Logo Aplikasi" width="100">
+        </div>
+        <nav>
+            <b>
+                <ul>
+                    <li><a href="Beranda.html">Beranda</a></li>
+                    <li><a href="transaksi.html">Transaksi</a></li>
+                    <li><a href="profil.html">Profil</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </b>
+        </nav>
+    </header>
+    
+    <div id="products" class="product-container">
+        <h2>Produk Terbaru</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="1.jpg" alt="Produk 1">
+                <h3>Produk 1</h3>
+                <p>Rp 194.750</p>
+                <button onclick="addToCart('Barang 1', 194750)">Tambah Keranjang</button>
+            </div>
+            <div class="product-card">
+                <img src="4.jpg" alt="Produk 2">
+                <h3>Produk 2</h3>
+                <p>Rp 130.150</p>
+                <button onclick="addToCart('Barang 2', 130150)">Tambah Keranjang</button>
+            </div>
+            <div class="product-card">
+                <img src="3.jpg" alt="Produk 3">
+                <h3>Produk 3</h3>
+                <p>Rp 185.250</p>
+                <button onclick="addToCart('Barang 3', 185250)">Tambah Keranjang</button>
+            </div>
+            <div class="product-card">
+                <img src="5.jpg" alt="Produk 4">
+                <h3>Produk 4</h3>
+                <p>Rp 44.999</p>
+                <button onclick="addToCart('Barang 4', 44999)">Tambah Keranjang</button>
+            </div>
+            <div class="product-card">
+                <img src="assets\2.jpg" alt="Produk 5">
+                <h3>Produk 5</h3>
+                <p>Rp 160.550</p>
+                <button onclick="addToCart('Barang 5', 1160550)">Tambah Keranjang</button>
+            </div>
+            <div class="product-card">
+                <img src="6.jpg" alt="Produk 6">
+                <h3>Produk 6</h3>
+                <p>Rp 97.000</p>
+                <button onclick="addToCart('Barang 6', 97000)">Tambah Keranjang</button>
+            </div>
+            <div class="product-card">
+                <img src="7.jpg" alt="Produk 7">
+                <h3>Produk 7</h3>
+                <p>Rp 54.820</p>
+                <button onclick="addToCart('Barang 7', 54820)">Tambah Keranjang</button>
+            </div>
+            <div class="product-card">
+                <img src="8.jpg" alt="Produk 8">
+                <h3>Produk 8</h3>
+                <p>Rp 48.000</p>
+                <button onclick="addToCart('Barang 8', 48000)">Tambah Keranjang</button>
+            </div>
+            <div class="product-card">
+                <img src="9.jpg" alt="Produk 9">
+                <h3>Produk 9</h3>
+                <p>Rp 50.000</p>
+                <button onclick="addToCart('Barang 9', 50000)">Tambah Keranjang</button>
+            </div>
+            <div class="product-card">
+                <img src="10.jpg" alt="Produk 10">
+                <h3>Produk 10</h3>
+                <p>Rp 62.000</p>
+                <button onclick="addToCart('Barang 10', 62000)">Tambah Keranjang</button>
+            </div>
+        </div>
+    </div>
+
+        <h2 id="Keranjang">Keranjang Belanja</h2>
+        <ul id="cart"></ul>
+        <p id="total">Total: Rp 0</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
