@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Transaksi</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <h1>Form Transaksi</h1>
+    <form id="transactionForm">
+        <label for="transactionName">Nama Transaksi :</label>
+        <input type="text" id="transactionName" name="transactionName" required><br><br>
+
+        <label for="transactionQuantity">Jumlah :</label>
+        <input type="number" id="transactionQuantity" name="transactionQuantity" required><br><br>
+
+        <label for="transactionCategory">Kategori :</label>
+        <input type="text" id="transactionCategory" name="transactionCategory" required><br><br>
+
+        <button type="submit">Simpan Transaksi</button>
+    </form>
+
+    <h1>Daftar Transaksi</h1>
+    <table id="transactionList">
+        <tr>
+            <th>No</th>
+            <th>Nama Transaksi</th>
+            <th>Jumlah</th>
+            <th>Kategori</th>
+        </tr>
+        <!-- Data transaksi akan ditambahkan di sini -->
+    </table>
+
+    <script src="script2.js"></script>
+</body>
+</html>
